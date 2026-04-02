@@ -42,10 +42,10 @@ class ProgressBar(tk.Canvas):
         self._redraw()
 
 
-class InkRankerApp(tk.Tk):
+class DInkApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title(f"InkRanker v{__version__}")
+        self.title(f"dInk v{__version__}")
         self.overrideredirect(True)
         self.resizable(False, False)
         self._busy = False
@@ -152,4 +152,4 @@ class InkRankerApp(tk.Tk):
 
 
 if __name__ == "__main__":
-    InkRankerApp().mainloop()
+    DInkApp().mainloop()

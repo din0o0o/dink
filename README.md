@@ -1,6 +1,6 @@
-[![Download InkRanker](https://img.shields.io/github/v/release/din0o0o/ink_ranker?label=Download&color=ffeb3b&labelColor=2d2d2d&style=for-the-badge)](https://github.com/din0o0o/ink_ranker/releases/latest)
+[![Download dInk](https://img.shields.io/github/v/release/din0o0o/dink?label=Download&color=ffeb3b&labelColor=2d2d2d&style=for-the-badge)](https://github.com/din0o0o/dink/releases/latest)
 
-> # $\color{#ffeb3b}\{\textbf{InkRanker}}$ 
+> # $\color{#ffeb3b}\{\textbf{dInk}}$
 </br>
 
 ## $\color{#adf137}\textbf{File Structure}$ </br>
@@ -16,12 +16,12 @@ src/
 
 #### $\color{#fff8dc}\text{Build from source:}$
 ```bash
-pyinstaller InkRanker.spec
+pyinstaller dInk.spec
 ```
 
 </br></br>
 ## $\color{#adf137}\text{Configuration}$ </br>
-<code>settings.py</code> $\color{#fff8dc}\text{for modifying values before compiling:}$               
+<code>settings.py</code> $\color{#fff8dc}\text{for modifying values before compiling:}$
 ```
 DPI = 300                           # render resolution
 FONT_SIZE = 12                      # point size for all fonts
@@ -39,4 +39,3 @@ LINE_SPACING_FACTOR = 1.15          # line height multiplier
 3. Counts dark pixels in image using histogram. </br>
 4. Outputs results in <code>results.JSON</code> and <code>results.docx</code>. </br>
 </ol> </br></br></br>
-

@@ -152,7 +152,7 @@ def save_json(cfg, results, relative, scan_seconds=0):
 
 def save_docx(cfg, results, relative):
     doc = Document()
-    doc.add_heading("Ink Ranker Results", level=1)
+    doc.add_heading("dInk Results", level=1)
     table = doc.add_table(rows=1, cols=3, style="Light List Accent 1")
     hdr = table.rows[0].cells
     hdr[0].text = "Font"
