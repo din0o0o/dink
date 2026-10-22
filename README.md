@@ -1,27 +1,29 @@
 [![Download dInk](https://img.shields.io/github/v/release/din0o0o/dink?label=Download&color=ffeb3b&labelColor=2d2d2d&style=for-the-badge)](https://github.com/din0o0o/dink/releases/latest)
 
-> # $\color{#ffeb3b}\{\textbf{dInk}}$
-</br>
+# dInk
 
-## $\color{#adf137}\textbf{File Structure}$ </br>
+Font ink usage comparator: renders the same text in every installed font and ranks them by dark pixels.
+
+## File structure
 
 ```
 src/
-├── main.py                    ¤ GUI, threading.
-├── engine.py                  ¤ Parsing fonts, rendering, counting dark pixels.
-├── sample.txt                 ¤ Text for rendering.
-├── fonts.txt                  ¤ List of >300 fonts.
-└── settings.py                ¤ Configurations called before compiling.
+├── main.py        # GUI, threading
+├── engine.py      # Parsing fonts, rendering, counting dark pixels
+├── settings.py    # Configuration, set before compiling
+├── sample.txt     # Text for rendering
+└── fonts.txt      # List of >300 fonts
 ```
 
-#### $\color{#fff8dc}\text{Build from source:}$
+## Build
+
 ```bash
 pyinstaller dInk.spec
 ```
 
-</br></br>
-## $\color{#adf137}\text{Configuration}$ </br>
-<code>settings.py</code> $\color{#fff8dc}\text{for modifying values before compiling:}$
+## Configuration
+
+`settings.py`:
 ```
 DPI = 300                           # render resolution
 FONT_SIZE = 12                      # point size for all fonts
@@ -31,11 +33,9 @@ FONTS_DIR = r"C:\Windows\Fonts"     # system fonts directory
 LINE_SPACING_FACTOR = 1.15          # line height multiplier
 ```
 
-</br></br>
-## $\color{#adf137}\text{Procedure}$ </br>
-<ol>
-1. Reads user font directory, matches with <code>fonts.txt</code> </br>
-2. Renders greyscale image with <code>sample.txt</code> for each item found, using Pillow. </br>
-3. Counts dark pixels in image using histogram. </br>
-4. Outputs results in <code>results.JSON</code> and <code>results.docx</code>. </br>
-</ol> </br></br></br>
+## Procedure
+
+1. Reads the font directory and matches it against `fonts.txt`.
+2. Renders `sample.txt` to a greyscale image per font, using Pillow.
+3. Counts dark pixels via histogram.
+4. Writes `results.json` and `results.docx`.
