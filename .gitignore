@@ -5,3 +5,7 @@ desktop.ini
 Thumbs.db
 /.claude/
 /CLAUDE.md
+
+# One README per project
+README.md
+!/README.md
